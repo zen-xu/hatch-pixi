@@ -74,7 +74,9 @@ filter_unconventional = true
 # process each line of a commit as an individual commit
 split_commits = false
 # regex for preprocessing the commit messages
-commit_preprocessors = [{ pattern = '\((\w+\s)?#([0-9]+)\)', replace = "([#${2}](<REPO>/issues/${2}))" }]
+commit_preprocessors = [
+  { pattern = '\((\w+\s)?#([0-9]+)\)', replace = "([#${2}](<REPO>/issues/${2}))" },
+]
 # regex for parsing and grouping commits
 commit_parsers = [
   { message = "^feat", group = "<!-- 0 -->🚀  Features" },
