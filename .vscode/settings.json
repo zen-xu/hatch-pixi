@@ -1,0 +1,26 @@
+{
+    "cSpell.words": [
+        "autofix",
+        "endfor",
+        "endmacro",
+        "endraw",
+        "isort",
+        "postprocessors",
+        "preprocessors",
+        "pygrep",
+        "pyupgrade",
+        "striptags",
+        "topo",
+        "ZhengYu"
+    ],
+    "ruff.enable": true,
+    "ruff.fixAll": false,
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "always",
+            "source.fixAll": "explicit",
+        }
+    },
+}
